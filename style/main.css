@@ -108,6 +108,7 @@ a{
   text-align: right;
   float: right;
   margin: auto;
+  margin-right: 20px;
   font-family: 'open_sans_bold', sans-serif;
 }
 
