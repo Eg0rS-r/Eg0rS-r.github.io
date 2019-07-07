@@ -22,14 +22,31 @@ a{
        url('../fonts/opensans-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sans_extrabold';
+  src: url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
 }
 
 @font-face {
-  font-family: 'open_sans';
+  font-family: 'open_sans_reg';
+  src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'open_sans_lig';
   src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
        url('../fonts/opensans-light-webfont.woff') format('woff');
-  font-weight: 300;
+  font-weight: normal;
   font-style: normal;
 
 }
@@ -46,7 +63,7 @@ a{
 .container{
   flex: 1;
   max-width: 1100px;
-  display: inline-flex;
+  display: flex;
   margin: auto;
 }
 
@@ -59,6 +76,7 @@ a{
 
 .logo{
   height: 76px;
+  letter-spacing: .1em;
   font-family: 'gora_free', serif;
   font-size: 18px;
   color: #F89513;
@@ -76,6 +94,7 @@ a{
 }
 
 .menu{
+  letter-spacing: .1em;
   width: fit-content;
   margin: auto;
 }
@@ -122,3 +141,83 @@ a{
   font-size: 14px;
   text-decoration: underline;
 }
+
+
+/* MAIN CONTENT */
+
+.maincontent{
+  width: 100%;
+}
+
+.banner{
+  background: url(../img/banner.jpg) no-repeat;
+  height: 486px;
+  width: 740px;
+  margin: 79px auto 58px;
+}
+
+.feauteres{
+  width: 100%;
+  background: #131415;
+  padding-top: 64px;
+  text-align: center;
+}
+
+.feauteres__header{
+  font-family: 'open_sans_bold', sans-serif;
+  font-size: 49px;
+  color: white;
+  margin-bottom: 47px;
+}
+
+.feauteres-cards{
+  margin: auto;
+}
+
+.card{
+  display: inline-block;
+  margin-right: 70px;
+  max-width: 200px;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.last{
+  margin: 0;
+}
+
+.card__icon{
+  width: 68px;
+  height: 68px;
+  background-color: #F89513;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 68px;
+  margin: auto;
+  margin-bottom: 42px;
+}
+
+.card__icon > img{
+  vertical-align: middle;
+}
+
+.card__header{
+  font-size: 11px;
+  font-family: 'open_sans_extrabold', sans-serif;
+  letter-spacing: .24em;
+  margin-bottom: 30px;
+}
+
+.card__text{
+  font-family: 'open_sans_lig', sans-serif;
+  font-size: 18px;
+  color: #F4F4F4;
+}
+
+.card__list{
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 15px;
+  text-align: left;
+}
+
