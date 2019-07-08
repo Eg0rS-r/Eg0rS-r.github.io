@@ -180,6 +180,7 @@ h1{
   max-width: 200px;
   color: white;
   margin-bottom: 100px;
+  vertical-align: top;
 }
 
 .last{
@@ -392,6 +393,11 @@ h1{
   margin: auto 0;
 }
 
+.social__text{
+  margin-bottom: 8px;
+
+}
+
 .social__icon{
   width: 20px;
   height: 20px;
@@ -400,6 +406,7 @@ h1{
   display: inline-block;
   line-height: 20px;
   text-align: center;
+  margin-right: 7px;
 }
 
 .social__icon > img{
