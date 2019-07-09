@@ -193,6 +193,7 @@ img{
 .maincontent{
   width: 100%;
   padding-top: 79px;
+  margin-bottom: 65px;
 }
 
 .banner{
@@ -270,6 +271,7 @@ img{
   width: 100%;
   text-align: center;
   padding-top: 65px;
+  margin-bottom: 65px;
 }
 
 .content-list{
@@ -381,8 +383,6 @@ img{
 .pagination{
   width: 100%;
   text-align: center;
-  margin-top: 65px;
-  margin-bottom: 65px;
   font-family: 'Roboto';
 }
 
