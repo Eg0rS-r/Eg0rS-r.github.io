@@ -42,7 +42,7 @@ img{
   font-family: 'open_sans';
   src: url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
        url('../fonts/opensans-extrabold-webfont.woff') format('woff');
-  font-weight: 800;
+  font-weight: 500;
   font-style: normal;
 
 }
@@ -84,7 +84,7 @@ img{
 }
 
 .headline{
-  font-family: "Open Sans";
+  font-family: "open_sans";
   font-size: 49px;
   font-weight: 700;
   text-transform: uppercase;
@@ -115,7 +115,6 @@ img{
   height: 76px;
   background: #131415;
   text-align: center;
-  font-family: 'open_sans';
   font-weight: 700;
 }
 
@@ -211,7 +210,7 @@ img{
   color: white;
 }
 
-.feauteres-cards{
+.cards{
   margin: 0 auto 100px;
 }
 
@@ -219,12 +218,7 @@ img{
   display: inline-block;
   margin-right: 70px;
   max-width: 200px;
-  color: white;
   vertical-align: top;
-}
-
-.last{
-  margin: 0;
 }
 
 .card__icon{
@@ -235,7 +229,7 @@ img{
   text-align: center;
   line-height: 68px;
   margin: auto;
-  margin-bottom: 42px;
+  margin-bottom: 10px;
 }
 
 .card__icon > img{
@@ -244,17 +238,17 @@ img{
 
 .card__header{
   font-size: 11px;
-  font-family: 'open_sans_extrabold', sans-serif;
-  letter-spacing: .24em;
-  margin-bottom: 30px;
+  font-weight: 500;
+  line-height: 51.38px;
+  text-transform: uppercase;
+  letter-spacing: 2.88px;
 }
 
 .card__text{
-  font-family: 'open_sans_lig', sans-serif;
+  line-height: 30px;
   font-size: 18px;
   color: #F4F4F4;
-  font-weight: 400;
-  line-height: 1.66;
+  font-weight: 300;
 }
 
 .card__list{
@@ -333,7 +327,6 @@ img{
 
 .top-news__header{
   margin-bottom: 24px;
-  font-family: "Open Sans";
   font-size: 12px;
   font-weight: 700;
   line-height: 21px;
@@ -435,7 +428,6 @@ img{
   background: #131415;
   color: white;
   text-align: center;
-  font-family: 'open_sans';
 }
 
 .comment{
@@ -468,6 +460,10 @@ img{
   line-height: 20px;
   text-align: center;
   margin-right: 7px;
+}
+
+.social__icon:hover {
+  background: #D0D0D0;
 }
 
 .social__icon > img{
