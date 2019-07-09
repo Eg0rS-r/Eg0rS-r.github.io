@@ -1,10 +1,14 @@
+/* BASE */
+
 *{
   margin: 0;
   padding: 0;
 }
 
 body{
-  font-family: 'Roboto';
+  font-family: 'open_sans';
+  font-weight: normal;
+  font-size: 14px;
 }
 
 a{
@@ -27,24 +31,24 @@ img{
 }
 
 @font-face {
-  font-family: 'open_sans_bold';
+  font-family: 'open_sans';
   src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
        url('../fonts/opensans-bold-webfont.woff') format('woff');
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'open_sans_extrabold';
+  font-family: 'open_sans';
   src: url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
        url('../fonts/opensans-extrabold-webfont.woff') format('woff');
-  font-weight: normal;
+  font-weight: 800;
   font-style: normal;
 
 }
 
 @font-face {
-  font-family: 'open_sans_reg';
+  font-family: 'open_sans';
   src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
        url('../fonts/opensans-regular-webfont.woff') format('woff');
   font-weight: normal;
@@ -53,10 +57,10 @@ img{
 }
 
 @font-face {
-  font-family: 'open_sans_lig';
+  font-family: 'open_sans';
   src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
        url('../fonts/opensans-light-webfont.woff') format('woff');
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 
 }
@@ -70,8 +74,14 @@ img{
 
 }
 
-
-
+.logo{
+  font-family: 'gora_free';
+  font-size: 18px;
+  color: #F89513;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: .1em;
+}
 
 .headline{
   font-family: "Open Sans";
@@ -95,27 +105,27 @@ img{
   margin: auto;
 }
 
+
+
+/* HEADER */
+
 .header{
   display: flex;
   width: 100%;
   height: 76px;
   background: #131415;
   text-align: center;
-  font-family: 'open_sans_bold', sans-serif;
+  font-family: 'open_sans';
+  font-weight: 700;
 }
 
-.logo{
+.header__logo{
   height: 76px;
-  letter-spacing: .1em;
-  font-family: 'gora_free', serif;
-  font-size: 18px;
-  color: #F89513;
-  display: inline-block;
-  vertical-align: middle;
   padding: 0 20px;
+  font-weight: normal;
 }
 
-.logo:before {
+.header__logo:before {
   content: "";
   display: inline-block;
   min-height: inherit;
@@ -126,6 +136,9 @@ img{
 .menu{
   width: fit-content;
   margin: auto;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
 }
 
 .menu__item{
@@ -165,13 +178,10 @@ img{
 }
 
 .schedule{
+  opacity: .7;
   color: #C17514;
-  font-size: 14px;
   text-decoration: underline;
 }
-
-
-
 
 
 
@@ -191,11 +201,7 @@ img{
 
 
 
-
-
-
-
-
+/* Feauteres */
 
 .feauteres{
   width: 100%;
@@ -203,12 +209,6 @@ img{
   padding-top: 64px;
   text-align: center;
   color: white;
-}
-
-h1{
-  font-family: 'open_sans_bold', sans-serif;
-  font-size: 49px;
-  margin-bottom: 47px;
 }
 
 .feauteres-cards{
@@ -266,35 +266,23 @@ h1{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* News block */
+/* News */
 
 .news{
-  color: #211E1E;
   width: 100%;
   text-align: center;
-  font-size: 18px;
-  font-weight: 300;
   padding-top: 65px;
 }
 
 .content-list{
   width: 100%;
+  color: #211E1E;
   margin-left: 20px;
   list-style: none;
   text-align: left;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .content-item{
@@ -308,36 +296,32 @@ h1{
   height: 160px;
   border-radius: 50%;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .content-desc{
   width: 100%;
   min-height: 160px;
-  text-align: justify;
-  font-weight: 300;
   color: #221F1F;
 }
 
 .content-desc__date{
   color: #656464;
-  line-height: 30px;
   font-size: 14px;
 }
 
 .content-desc__topic{
   font-weight: 700;
-  line-height: 30px;
   font-size: 18px;
 }
 
 .content-desc__text{
-  line-height: 30px;
+  text-align: justify;
 }
 
 
 
-
-/* Top news block */
+/* Top news */
 
 .top-news{
   float: right;
@@ -400,29 +384,29 @@ h1{
 
 
 
-
+/* Pagination */
 
 .pagination{
   width: 100%;
   text-align: center;
   margin-top: 65px;
   margin-bottom: 65px;
+  font-family: 'Roboto';
 }
 
-.now-page{
-  font-family: 'open_sans_lig';
+.page-of{
   color: #656464;
   display: inline-block;
   margin-right: 15px;
 }
 
-.now{
+.now-page{
   background: #27273E;
   color: white;
 }
 
 .pages__item{
-  font-family: 'open_sans_reg';
+  font-weight: 300;
   height: 25px;
   width: 25px;
   display: inline-block;
@@ -433,11 +417,16 @@ h1{
 
 .pages{
   display: inline-block;
+  font-weight: 700;
 }
 
 .arrow-left{
   transform: rotate(180deg);
 }
+
+
+
+/* FOOTER */
 
 .footer{
   display: flex;
@@ -445,29 +434,29 @@ h1{
   height: 76px;
   background: #131415;
   color: white;
+  text-align: center;
+  font-family: 'open_sans';
 }
 
 .comment{
-  font-family: 'open_sans_lig';
-  font-size: 14px;
+  text-align: left;
   margin: auto 20px;
 }
 
-.footer-logo{
+.footer__logo{
   padding: 0;
   margin: auto;
 }
 
 .social{
   float: right;
-  font-family: 'open_sans_bold';
-  font-size: 14px;
-  margin: auto 0;
+  font-weight: 700;
+  margin: auto 20px;
+  text-align: left;
 }
 
 .social__text{
   margin-bottom: 8px;
-
 }
 
 .social__icon{
@@ -483,12 +472,31 @@ h1{
 
 .social__icon > img{
   vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+
+
+/* IMMUTABLE */
+
+.unavailable{
+  opacity: .3;
+  cursor: default;
+  pointer-events: none;
 }
 
 .first-vert{
   margin-top: 0;
 }
 
+.first-hor{
+  margin-left: 0;
+}
+
 .last-vert{
   margin-bottom: 0;
+}
+
+.last-hor{
+  margin-right: 0;
 }
