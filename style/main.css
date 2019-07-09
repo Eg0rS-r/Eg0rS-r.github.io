@@ -16,6 +16,10 @@ a{
   color: #131415;
 }
 
+ul{
+  list-style: none;
+}
+
 img{
   max-width: 100%;
   max-height: 100%;
@@ -339,40 +343,35 @@ img{
   margin-bottom: 20px;
 }
 
-.top-news__list{
-  list-style: none;
-}
-
 .top-news__img{
   width: 160px;
   height: 160px;
   background-position: center;
+  background: rgba(245,245,245, 0.2);
+  transition-duration: .5s;
+}
+
+.top-news__img:hover{
+  background: rgba(245,245,245, 0);
 }
 
 .top-news__month{
   color: #666565;
 }
 
+
+
 .top-news__1{
-  background-image: linear-gradient(
-    rgba(245,245,245, 0.2),
-    rgba(245,245,245, 0.2)
-    ), url(../img/top_news__1.jpg);
-    height: 120px;
+  background-image: url(../img/top_news__1.jpg);
+  height: 120px;
 }
 
 .top-news__2{
-  background-image: linear-gradient(
-    rgba(245,245,245, 0.2),
-    rgba(245,245,245, 0.2)
-    ), url(../img/top_news__2.jpg);
+  background-image: url(../img/top_news__2.jpg);
 }
 
 .top-news__3{
-  background-image: linear-gradient(
-    rgba(245,245,245, 0.2),
-    rgba(245,245,245, 0.2)
-    ), url(../img/top_news__3.jpg);
+  background-image: url(../img/top_news__3.jpg);
 }
 
 
@@ -393,22 +392,23 @@ img{
   margin-right: 15px;
 }
 
-.now-page{
-  background: #27273E;
-  color: white;
-}
-
 .pages__item{
+  display: inline-block;
   font-weight: 300;
   height: 25px;
   width: 25px;
-  display: inline-block;
   line-height: 25px;
   margin: auto;
   border-radius: 2px;
+  transition-duration: .3s;
+}
+
+.pages__item:hover {
+  color: #F79412;
 }
 
 .pages{
+  cursor: default;
   display: inline-block;
   font-weight: 700;
 }
@@ -451,6 +451,10 @@ img{
   margin-bottom: 8px;
 }
 
+.social__list{
+  cursor: default;
+}
+
 .social__icon{
   width: 20px;
   height: 20px;
@@ -460,10 +464,11 @@ img{
   line-height: 20px;
   text-align: center;
   margin-right: 7px;
+  transition-duration: .3s;
 }
 
 .social__icon:hover {
-  background: #D0D0D0;
+  background: #F79412;
 }
 
 .social__icon > img{
@@ -474,6 +479,11 @@ img{
 
 
 /* IMMUTABLE */
+
+.now-page{
+  background: #27273E;
+  color: #F79412;
+}
 
 .unavailable{
   opacity: .3;
