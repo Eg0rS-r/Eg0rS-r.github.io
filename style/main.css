@@ -107,6 +107,7 @@ img{
   max-width: 1100px;
   display: flex;
   margin: auto;
+  padding: 0 20px;
 }
 
 
@@ -116,24 +117,16 @@ img{
 .header{
   display: flex;
   width: 100%;
-  height: 76px;
+  min-height: 76px;
   background: #131415;
   text-align: center;
   font-weight: 700;
+  align-items: center;
 }
 
 .header__logo{
-  height: 76px;
-  padding: 0 20px;
   font-weight: normal;
-}
-
-.header__logo:before {
-  content: "";
-  display: inline-block;
-  min-height: inherit;
-  height: 100%;
-  vertical-align: middle;
+  margin: auto 0;
 }
 
 .menu{
@@ -171,8 +164,7 @@ img{
   width: fit-content;
   text-align: right;
   float: right;
-  margin: auto;
-  margin-right: 20px;
+  margin: auto 0;
 }
 
 .phone_number{
@@ -193,7 +185,7 @@ img{
 .maincontent{
   width: 100%;
   padding-top: 79px;
-  margin-bottom: 65px;
+  padding-bottom: 65px;
 }
 
 .banner{
@@ -211,19 +203,24 @@ img{
   width: 100%;
   background: #131415;
   padding-top: 64px;
+  padding-bottom: 100px;
   text-align: center;
   color: white;
 }
 
-.cards{
-  margin: 0 auto 100px;
+.cards-list{
+  margin: 0 auto;
+  align-items: center;
 }
 
 .card{
   display: inline-block;
   margin-right: 70px;
   max-width: 200px;
-  vertical-align: top;
+}
+
+.card:last-child{
+  margin-right: 0;
 }
 
 .card__icon{
@@ -231,14 +228,16 @@ img{
   height: 68px;
   background-color: #F89513;
   border-radius: 50%;
-  text-align: center;
-  line-height: 68px;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 10px;
 }
 
 .card__icon > img{
-  vertical-align: middle;
+  position: relative;
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card__header{
@@ -271,13 +270,12 @@ img{
   width: 100%;
   text-align: center;
   padding-top: 65px;
-  margin-bottom: 65px;
+  padding-bottom: 65px;
 }
 
 .content-list{
   width: 100%;
   color: #211E1E;
-  margin-left: 20px;
   list-style: none;
   text-align: left;
   line-height: 30px;
@@ -286,8 +284,15 @@ img{
 }
 
 .content-item{
-  margin-top: 25px;
   margin-bottom: 30px;
+  border-bottom: #F5F5F5 2px solid;
+  padding-bottom: 25px;
+}
+
+.content-item:last-child{
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .round-img{
@@ -300,7 +305,7 @@ img{
 }
 
 .content-desc{
-  width: 100%;
+  width: fit-content;
   min-height: 160px;
   color: #221F1F;
 }
@@ -325,8 +330,6 @@ img{
 
 .top-news{
   float: right;
-  margin-left: auto;
-  margin-right: 20px;
   margin-left: 27px;
   text-align: left;
 }
@@ -343,6 +346,10 @@ img{
 
 .top-news__item{
   margin-bottom: 20px;
+}
+
+.top-news__item:last-child{
+  margin-bottom: 0;
 }
 
 .top-news__img{
@@ -392,7 +399,7 @@ img{
   margin-right: 15px;
 }
 
-.pages__item{
+.pages__link{
   display: inline-block;
   font-weight: 300;
   height: 25px;
@@ -403,7 +410,7 @@ img{
   transition-duration: .3s;
 }
 
-.pages__item:hover {
+.pages__link:hover {
   color: #F79412;
 }
 
@@ -424,26 +431,24 @@ img{
 .footer{
   display: flex;
   width: 100%;
-  height: 76px;
+  min-height: 76px;
   background: #131415;
   color: white;
   text-align: center;
+  align-items: center;
 }
 
 .comment{
   text-align: left;
-  margin: auto 20px;
 }
 
 .footer__logo{
-  padding: 0;
   margin: auto;
 }
 
 .social{
   float: right;
   font-weight: 700;
-  margin: auto 20px;
   text-align: left;
 }
 
@@ -453,6 +458,16 @@ img{
 
 .social__list{
   cursor: default;
+  width: fit-content;
+}
+
+.social__item{
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.social__item:last-child{
+  margin-right: 0;
 }
 
 .social__icon{
@@ -461,9 +476,6 @@ img{
   background: #D0D0D0;
   border-radius: 50%;
   display: inline-block;
-  line-height: 20px;
-  text-align: center;
-  margin-right: 7px;
   transition-duration: .3s;
 }
 
@@ -472,8 +484,11 @@ img{
 }
 
 .social__icon > img{
-  vertical-align: middle;
-  margin-bottom: 2px;
+  position: relative;
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -489,20 +504,4 @@ img{
   opacity: .3;
   cursor: default;
   pointer-events: none;
-}
-
-.first-vert{
-  margin-top: 0;
-}
-
-.first-hor{
-  margin-left: 0;
-}
-
-.last-vert{
-  margin-bottom: 0;
-}
-
-.last-hor{
-  margin-right: 0;
 }
