@@ -139,10 +139,14 @@ img{
 
 .menu__item{
   display: inline-block;
+  margin-right: 27px;
+}
+
+.menu__item:last-child{
+  margin-right: 0;
 }
 
 .menu__link{
-  margin-right: 27px;
   height: 18px;
 }
 
@@ -284,6 +288,7 @@ img{
 }
 
 .content-item{
+  min-height: 160px;
   margin-bottom: 30px;
   border-bottom: #F5F5F5 2px solid;
   padding-bottom: 25px;
@@ -434,8 +439,6 @@ img{
   min-height: 76px;
   background: #131415;
   color: white;
-  text-align: center;
-  align-items: center;
 }
 
 .comment{
