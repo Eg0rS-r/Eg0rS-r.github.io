@@ -116,7 +116,6 @@ img{
 
 .header{
   display: flex;
-  //display: block;
   width: 100%;
   min-height: 76px;
   background: #131415;
