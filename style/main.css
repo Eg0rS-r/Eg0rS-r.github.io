@@ -131,7 +131,6 @@ img{
 }
 
 .menu{
-  width: fit-content;
   margin: auto;
   font-size: 12px;
   text-transform: uppercase;
@@ -147,12 +146,7 @@ img{
   margin-right: 0;
 }
 
-.menu__link{
-  height: 18px;
-}
-
 .menu__icon{
-  display: inline-block;
   vertical-align: middle;
   margin-right: 15px;
 }
@@ -166,9 +160,7 @@ img{
 }
 
 .contact_phone{
-  width: fit-content;
   text-align: right;
-  float: right;
   font-style: normal;
 }
 
@@ -212,8 +204,8 @@ img{
 }
 
 .cards-list{
+  width: fit-content;
   margin: 0 auto;
-  align-items: center;
 }
 
 .feauteres__card{
@@ -234,8 +226,7 @@ img{
   height: 68px;
   background-color: #F89513;
   border-radius: 50%;
-  margin: 0 auto;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
 }
 
 .card__icon > img{
@@ -273,14 +264,12 @@ img{
 /* News */
 
 .news{
-  width: 100%;
   text-align: center;
   padding-top: 65px;
   padding-bottom: 65px;
 }
 
 .content-list{
-  width: 100%;
   color: #211E1E;
   list-style: none;
   text-align: left;
@@ -312,7 +301,6 @@ img{
 }
 
 .content-desc{
-  width: fit-content;
   min-height: 160px;
   color: #221F1F;
 }
@@ -336,7 +324,6 @@ img{
 /* Top news */
 
 .top-news{
-  float: right;
   margin-left: 27px;
   text-align: left;
 }
@@ -395,7 +382,6 @@ img{
 /* Pagination */
 
 .pagination{
-  width: 100%;
   text-align: center;
   font-family: 'Roboto';
 }
@@ -416,7 +402,6 @@ img{
   height: 25px;
   width: 25px;
   line-height: 25px;
-  margin: auto;
   border-radius: 2px;
   transition-duration: .3s;
 }
