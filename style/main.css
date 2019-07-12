@@ -108,12 +108,16 @@ img{
   padding: 0 20px;
 }
 
+.header-footer__container{
+  min-height: 76px;
+  align-items: center;
+}
+
 
 
 /* HEADER */
 
 .header{
-  display: flex;
   width: 100%;
   min-height: 76px;
   background: #131415;
@@ -165,6 +169,7 @@ img{
   width: fit-content;
   text-align: right;
   float: right;
+  font-style: normal;
 }
 
 .phone_number{
@@ -189,9 +194,7 @@ img{
 }
 
 .banner{
-  background: url(../img/banner.jpg) no-repeat;
-  height: 486px;
-  width: 740px;
+  display: block;
   margin: 0 auto 58px;
 }
 
@@ -213,10 +216,13 @@ img{
   align-items: center;
 }
 
-.card{
-  display: inline-block;
+.feauteres__card{
   margin-right: 70px;
   max-width: 200px;
+}
+
+.card{
+  display: inline-block;
 }
 
 .card:last-child{
@@ -434,7 +440,6 @@ img{
 /* FOOTER */
 
 .footer{
-  display: flex;
   width: 100%;
   min-height: 76px;
   background: #131415;
@@ -498,12 +503,12 @@ img{
 
 /* IMMUTABLE */
 
-.now-page{
+.pages__link--now-page{
   background: #27273E;
   color: #F79412;
 }
 
-.unavailable{
+.pages__link--unavailable{
   opacity: .3;
   cursor: default;
   pointer-events: none;
