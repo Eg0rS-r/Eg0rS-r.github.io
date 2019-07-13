@@ -124,7 +124,6 @@ img{
   background: #131415;
   text-align: center;
   font-weight: 700;
-  color: white;
 }
 
 .header__logo{
@@ -177,6 +176,7 @@ img{
 }
 
 .menu__text{
+  color: white;
   min-height: 18px;
   letter-spacing: .1em;
   display: inline-block;
@@ -192,6 +192,7 @@ img{
 }
 
 .phone_number{
+  color: white;
   font-size: 21px;
 }
 
