@@ -81,6 +81,7 @@ img{
 .logo{
   font-family: 'gora_free';
   font-size: 18px;
+  font-weight: normal;
   color: #F89513;
   letter-spacing: .1em;
 }
@@ -123,6 +124,7 @@ img{
   background: #131415;
   text-align: center;
   font-weight: 700;
+  color: white;
 }
 
 .header__logo{
@@ -131,7 +133,7 @@ img{
 }
 
 .menu{
-  margin: auto;
+  width: 100%;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
@@ -146,26 +148,50 @@ img{
   margin-right: 0;
 }
 
+.menu__link::before{
+  content: "";
+  width: 20px;
+  height: 18px;
+  margin-right: 12px;
+  display: inline-block;
+  vertical-align: bottom;
+  background: no-repeat;
+  background-position: center;
+}
+
+.link-main::before{
+  background-image: url(../img/main_icon.svg);
+}
+
+.link-feed::before{
+  background-image: url(../img/feed_icon.svg);
+}
+
+.link-service::before{
+  background-image: url(../img/service_icon.svg);
+}
+
 .menu__icon{
   vertical-align: middle;
   margin-right: 15px;
 }
 
 .menu__text{
+  min-height: 18px;
   letter-spacing: .1em;
   display: inline-block;
   font-size: 12px;
-  color: white;
   vertical-align: middle;
 }
 
 .contact_phone{
+  min-width: fit-content;
+  margin-left: auto;
   text-align: right;
   font-style: normal;
 }
 
 .phone_number{
-  color: white;
   font-size: 21px;
 }
 
@@ -211,6 +237,7 @@ img{
 .feauteres__card{
   margin-right: 70px;
   max-width: 200px;
+  vertical-align: top;
 }
 
 .card{
@@ -276,6 +303,7 @@ img{
   line-height: 30px;
   font-size: 18px;
   font-weight: 300;
+  margin-right: 27px;
 }
 
 .content-item{
@@ -325,6 +353,7 @@ img{
 
 .top-news{
   margin-left: 27px;
+  margin-left: auto;
   text-align: left;
 }
 
@@ -432,15 +461,18 @@ img{
 }
 
 .comment{
+  min-width: fit-content;
   text-align: left;
 }
 
 .footer__logo{
-  margin: auto;
+  width: 100%;
+  text-align: center;
 }
 
 .social{
-  float: right;
+  min-width: fit-content;
+  margin-left: auto;
   font-weight: 700;
   text-align: left;
 }
