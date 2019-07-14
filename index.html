@@ -16,9 +16,9 @@
 
 
         <header class="header">
-            <div class="container header-footer__container">
+            <div class="container header__container">
 
-                <a href="#" class="header__logo"><h1 class="logo">Афродита</h1></a>
+                <a href="#" class="logo header__logo"><h1 class="logo__text">Афродита</h1></a>
 
                 <nav class="menu">
                     <ul class="menu__list">
@@ -40,9 +40,9 @@
                     </ul>
                 </nav>
 
-                <div class="contact_phone">
-                    <a href="tel:+78000039210" class="phone_number">8 (800) 00-392-10</a><br>
-                    <a href="#" class="schedule">График работы</a>
+                <div class="contact">
+                    <a href="tel:+78000039210" class="contact__number">8 (800) 00-392-10</a><br>
+                    <a href="#" class="contact__schedule">График работы</a>
                 </div>
 
             </div>
@@ -51,7 +51,9 @@
 
         <main class="maincontent">
 
-            <img src="./img/banner.jpg" alt="Баннер Just do it" class="banner">
+            <div class="banner">
+                <img src="./img/banner.jpg" alt="Баннер Just do it" class="banner__img">
+            </div>
 
             <div class="feauteres">
 
@@ -76,7 +78,7 @@
                         </li>
                         <li class="card feauteres__card">
                             <div class="card__icon">
-                                <img src="./img/painter_palette.svg" alt="Палитра художника">
+                                <img src="./img/painter_palette.svg" alt="Палитра художника" class="card__img">
                             </div>
     
                             <h3 class="card__header">ПРЕМИУМ-КЛАСС</h3>
@@ -117,7 +119,7 @@
                     <ul class="content-list">
                         <li class="content-item">
                             <img src="./img/news1.jpg" alt="Картинка новостей" class="round-img">
-                            <div class="content-desc">
+                            <div class="contact-desc">
                                 <span class="content-desc__date">
                                     12.10.2016
                                 </span>
@@ -138,7 +140,7 @@
 
                             <img src="./img/news2.jpg" alt="Картинка новостей" class="round-img">
 
-                            <div class="contetn-desc">
+                            <div class="content-desc">
                                 <div class="content-desc__date">
                                     01.02.2016
                                 </div>
@@ -154,7 +156,7 @@
                         </li>
                         <li class="content-item">
                             <img src="./img/news3.jpg" alt="Картинка новостей" class="round-img">
-                            <div class="news-desc">
+                            <div class="contact-desc">
                                 <div class="content-desc__date">
                                     22.12.2015
                                 </div>
@@ -206,37 +208,37 @@
             </div>
 
             <div class="pagination">
-                <div class="page-of">Страница 1 из 7</div>
-                <ul class="pages">
-                    <li class="pages__item">
-                        <a href="#" class="pages__link pages__link--unavailable">
+                <div class="pagination__of">Страница 1 из 7</div>
+                <ul class="pagination__list">
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link pages__link--unavailable">
                             <img src="./img/arrow.svg" alt="arrow left" class="arrow-left">
                         </a>
                     </li>
-                    <li class="pages__item">
+                    <li class="pagination__item">
 
-                        <a href="#" class="pages__link pages__link--now-page">1</a>
+                        <a href="#" class="pagination__link pages__link--now-page">1</a>
                     </li>
-                    <li class="pages__item">
-                        <a href="#" class="pages__link">2</a>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">2</a>
                     </li>
-                    <li class="pages__item">
-                        <a href="#" class="pages__link">3</a>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">3</a>
                     </li>
-                    <li class="pages__item">
-                        <a href="#" class="pages__link">4</a>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">4</a>
                     </li>
-                    <li class="pages__item">
-                        <a href="#" class="pages__link">5</a>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">5</a>
                     </li>
-                    <li class="pages__item">
-                        <a href="#" class="pages__link">6</a>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">6</a>
                     </li>
-                    <li class="pages__item">
-                        <a href="#" class="pages__link">7</a>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">7</a>
                     </li>
-                    <li class="pages__item">
-                        <a href="#" class="pages__link">
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">
                             <img src="./img/arrow.svg" alt="arrow right" class="arrow-right">
                         </a>
                     </li>
@@ -247,7 +249,7 @@
 
 
         <footer class="footer">
-            <div class="container header-footer__container">
+            <div class="container footer__container">
 
                 <div class="comment">
                     Сделано с любовью и старанием<br>
@@ -255,34 +257,34 @@
                     Автор работы: <b>Прохладов Вадим</b><br>
                 </div>
 
-                <a href="#" class="footer__logo logo"><h1 class="logo">Афродита</h1></a>
+                <a href="#" class="logo footer__logo"><h1 class="logo__text">Афродита</h1></a>
 
                 <div class="social">
                     <div class="social__text">Наши социальные сети</div>
                     <ul class="social__list">
                         <li class="social__item">
                             <a href="" class="social__icon">
-                                <img src="./img/vk.svg" alt="ВКонтакте">
+                                <img src="./img/vk.svg" alt="ВКонтакте" class="social__img">
                             </a>
                         </li>
                         <li class="social__item">
                             <a href="" class="social__icon">
-                                <img src="./img/fb.svg" alt="facebook">
+                                <img src="./img/fb.svg" alt="facebook" class="social__img">
                             </a>
                         </li>
                         <li class="social__item">
                             <a href="" class="social__icon">
-                                <img src="./img/google.svg" alt="google">
+                                <img src="./img/google.svg" alt="google" class="social__img">
                             </a>
                         </li>
                         <li class="social__item">
                             <a href="" class="social__icon">
-                                <img src="./img/twitter.svg" alt="twitter">
+                                <img src="./img/twitter.svg" alt="twitter" class="social__img">
                             </a>
                         </li>
                         <li class="social__item">
                             <a href="" class="social__icon">
-                                <img src="./img/mail.svg" alt="почта">
+                                <img src="./img/mail.svg" alt="почта" class="social__img">
                             </a>
                         </li>
                     </ul>

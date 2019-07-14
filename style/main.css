@@ -78,7 +78,7 @@ img{
 
 }
 
-.logo{
+.logo__text{
   font-family: 'gora_free';
   font-size: 18px;
   font-weight: normal;
@@ -109,30 +109,29 @@ img{
   padding: 0 20px;
 }
 
-.header-footer__container{
-  min-height: 76px;
-  align-items: center;
-}
-
 
 
 /* HEADER */
 
 .header{
   width: 100%;
-  min-height: 76px;
   background: #131415;
   text-align: center;
   font-weight: 700;
+  padding: 14px 0;
+}
+
+.header__container{
+  align-items: center;
 }
 
 .header__logo{
   font-weight: normal;
-  margin: auto 0;
 }
 
 .menu{
-  width: 100%;
+  width: fit-content;
+  margin: 0 auto;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
@@ -184,19 +183,17 @@ img{
   vertical-align: middle;
 }
 
-.contact_phone{
-  min-width: fit-content;
-  margin-left: auto;
+.contact{
   text-align: right;
   font-style: normal;
 }
 
-.phone_number{
+.contact__number{
   color: white;
   font-size: 21px;
 }
 
-.schedule{
+.contact__schedule{
   opacity: .7;
   color: #C17514;
   text-decoration: underline;
@@ -214,7 +211,8 @@ img{
 
 .banner{
   display: block;
-  margin: 0 auto 58px;
+  margin-bottom: 58px;
+  text-align: center;
 }
 
 
@@ -255,11 +253,11 @@ img{
   background-color: #F89513;
   border-radius: 50%;
   margin: 0 auto 10px;
+  position: relative;
 }
 
-.card__icon > img{
-  position: relative;
-  display: block;
+.card__img{
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -416,17 +414,17 @@ img{
   font-family: 'Roboto';
 }
 
-.pages__item{
+.pagination__item{
   display: inline-block;
 }
 
-.page-of{
+.pagination__of{
   color: #656464;
   display: inline-block;
   margin-right: 15px;
 }
 
-.pages__link{
+.pagination__link{
   display: inline-block;
   font-weight: 300;
   height: 25px;
@@ -436,11 +434,11 @@ img{
   transition-duration: .3s;
 }
 
-.pages__link:hover {
+.pagination__link:hover {
   color: #F79412;
 }
 
-.pages{
+.pagination__list{
   cursor: default;
   display: inline-block;
   font-weight: 700;
@@ -456,24 +454,25 @@ img{
 
 .footer{
   width: 100%;
-  min-height: 76px;
   background: #131415;
   color: white;
+  padding: 14px 0;
+}
+
+.footer__container{
+  align-items: center;
 }
 
 .comment{
-  min-width: fit-content;
   text-align: left;
 }
 
 .footer__logo{
-  width: 100%;
+  margin: 0 auto;
   text-align: center;
 }
 
 .social{
-  min-width: fit-content;
-  margin-left: auto;
   font-weight: 700;
   text-align: left;
 }
@@ -503,15 +502,15 @@ img{
   border-radius: 50%;
   display: inline-block;
   transition-duration: .3s;
+  position: relative;
 }
 
 .social__icon:hover {
   background: #F79412;
 }
 
-.social__icon > img{
-  position: relative;
-  display: block;
+.social__img{
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
