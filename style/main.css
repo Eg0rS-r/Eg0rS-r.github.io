@@ -318,13 +318,19 @@ img{
   padding-bottom: 0;
 }
 
-.round-img{
-  float: left;
+.avatar{
   width: 160px;
   height: 160px;
   border-radius: 50%;
+  overflow: hidden;
+  float: left;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+
+.avatar__img{
+  display: block;
+  object-fit: scale-down;
 }
 
 .content-desc{
