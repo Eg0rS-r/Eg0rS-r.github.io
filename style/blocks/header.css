@@ -1,0 +1,81 @@
+.header{
+  width: 100%;
+  background: #131415;
+  font-weight: 700;
+  padding: 16px 0;
+}
+
+.header__container{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo{
+  font-weight: normal;
+}
+
+.menu{
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.menu__item{
+  display: inline-block;
+  margin-right: 27px;
+}
+
+.menu__item:last-child{
+  margin-right: 0;
+}
+
+.menu__link::before{
+  content: "";
+  width: 20px;
+  height: 18px;
+  margin-right: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  background: no-repeat;
+  background-position: center;
+}
+
+.link-main::before{
+  background-image: url(../../img/menu/main_icon.svg);
+}
+
+.link-feed::before{
+  background-image: url(../../img/menu/feed_icon.svg);
+}
+
+.link-service::before{
+  background-image: url(../../img/menu/service_icon.svg);
+}
+
+.menu__icon{
+  margin-right: 15px;
+}
+
+.menu__text{
+  display: inline-block;
+  color: white;
+  vertical-align: middle;
+  letter-spacing: .1em;
+  font-size: 12px;
+}
+
+.contact{
+  text-align: right;
+}
+
+.contact__number{
+  color: white;
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+
+.contact__schedule{
+  opacity: .7;
+  color: #f89513;
+  text-decoration: underline;
+}

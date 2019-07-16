@@ -1,0 +1,29 @@
+
+.breadcrumbs__list{
+  display: flex;
+  opacity: .8;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.breadcrumbs__link{
+  text-decoration: underline;
+  color: #f89513;
+}
+
+.breadcrumbs__item::after{
+  content: "/";
+  color: #221f1f;
+  padding-right: 3px;
+}
+
+.breadcrumbs__item--unactive::after{
+  content: none;
+}
+
+.breadcrumbs__item--unactive .breadcrumbs__link{
+  color: #221f1f;
+  text-decoration: none;
+  cursor: default;
+  pointer-events: none;
+}
