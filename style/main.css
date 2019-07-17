@@ -4,18 +4,29 @@
 @import url('./layout/base.css');
 
 @import url('./blocks/header.css');
+@import url('./blocks/breadcrumbs.css');
 @import url('./blocks/feauteres-cards-list.css');
+@import url('./blocks/service-cards-list.css');
+@import url('./blocks/form.css');
 @import url('./blocks/content-list.css');
 @import url('./blocks/pagination.css');
+@import url('./blocks/notice.css');
+@import url('./blocks/partners.css');
+@import url('./blocks/top-news.css');
 @import url('./blocks/footer.css');
 
 
-/* MAIN CONTENT */
 
-.maincontent{
-  width: 100%;
+/* MAIN PAGE */
+
+.maincontent-main{
   padding-top: 79px;
   padding-bottom: 65px;
+}
+
+.headline--center{
+  margin: 0 auto 60px;
+  letter-spacing: 1.47px;
 }
 
 .banner{
@@ -24,8 +35,7 @@
   text-align: center;
 }
 
-
-/* Feauteres */
+/* Feauteres */ 
 
 .feauteres{
   width: 100%;
@@ -35,13 +45,6 @@
   color: white;
   text-align: center;
 }
-
-.feauteres__card{
-  margin-right: 70px;
-  max-width: 200px;
-  vertical-align: top;
-}
-
 
 /* News */
 
@@ -56,65 +59,49 @@
 }
 
 
-/* Top news */
 
-.top-news{
-  display: flex;
+/* FEED PAGE */
+
+.maincontent-feed{
+  padding: 48px 0 61px;
+}
+
+.reviews{
+  padding-top: 28px;
+  padding-bottom: 55px;
+}
+
+.reviews__container{
   flex-flow: column;
-  text-align: left;
-  margin-left: auto;
 }
 
-.top-news__header{
-  margin-bottom: 24px;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 21px;
-  letter-spacing: 2.4px;
-  color: #221f1f;
-  text-transform: uppercase;
+.reviews__content-desc{
+  max-width: 685px;
 }
 
-.top-news__item{
-  margin-bottom: 20px;
+
+
+/* SERVICE PAGE */
+
+.maincontent-service{
+  padding: 44px 0 83px;
 }
 
-.top-news__item:last-child{
+.line-flex{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-bottom: 50px;
+}
+
+.line-flex:last-child{
   margin-bottom: 0;
 }
 
-.top-news__img{
-  width: 160px;
-  height: 160px;
-  background-position: center;
-  background: rgba(245,245,245, 0.2);
-  transition-duration: .5s;
+.service{
+  margin-top: 24px;
 }
 
-.top-news__img:hover{
-  background: rgba(245,245,245, 0);
-}
-
-.top-news__month{
-  color: #666565;
-}
-
-.top-news__1{
-  background-image: url(../img/news/top_news__1.jpg);
-  height: 120px;
-}
-
-.top-news__2{
-  background-image: url(../img/news/top_news__2.jpg);
-}
-
-.top-news__3{
-  background-image: url(../img/news/top_news__3.jpg);
-}
-
-
-
-.headline--center{
-  margin: 0 auto 60px;
-  letter-spacing: 1.47px;
+.service__container{
+  flex-flow: column;
 }

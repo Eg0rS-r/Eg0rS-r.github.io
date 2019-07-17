@@ -3,6 +3,7 @@
   background: #131415;
   font-weight: 700;
   padding: 16px 0;
+  position: relative;
 }
 
 .header__container{
@@ -103,4 +104,11 @@
   opacity: .7;
   color: #f89513;
   text-decoration: underline;
+}
+
+.schedule-text{
+  position: absolute;
+  text-align: center;
+  top: 100%;
+
 }

@@ -24,9 +24,17 @@ img{
   max-height: 100%;
 }
 
-button{
+input, textarea, button{
   border: none;
 }
+
+
+
+.accent{
+  color: #f89513;
+}
+
+/* Headline */
 
 .headline{
   font-family: "open_sans";
@@ -35,6 +43,8 @@ button{
   text-transform: uppercase;
   margin-bottom: 50px;
 }
+
+/* Container */
 
 .container{
   flex: 1;
@@ -48,10 +58,25 @@ button{
   padding: 0 90px;
 }
 
+/* Logo */
+
 .logo__text{
   font-family: 'gora_free';
   font-size: 18px;
   font-weight: normal;
   color: #F89513;
   letter-spacing: .1em;
+}
+
+/* Card list */
+
+.cards-list{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+.card:last-child{
+  margin-right: 0;
 }
