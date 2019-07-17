@@ -29,6 +29,11 @@
   margin-right: 0;
 }
 
+.menu__link{
+  color: white;
+  transition-duration: .3s;
+}
+
 .menu__link::before{
   content: "";
   width: 20px;
@@ -38,6 +43,7 @@
   vertical-align: middle;
   background: no-repeat;
   background-position: center;
+  transition-duration: .3s;
 }
 
 .link-main::before{
@@ -52,16 +58,35 @@
   background-image: url(../../img/menu/service_icon.svg);
 }
 
+.link-main:hover:before, .menu__link--active.link-main::before{
+  background-image: url(../../img/menu/main_icon_h.svg);
+}
+
+.link-feed:hover:before, .menu__link--active.link-feed::before{
+  background-image: url(../../img/menu/feed_icon_h.svg);
+}
+
+.link-service:hover:before, .menu__link--active.link-service::before{
+  background-image: url(../../img/menu/service_icon_h.svg);
+}
+
 .menu__icon{
   margin-right: 15px;
 }
 
 .menu__text{
   display: inline-block;
-  color: white;
   vertical-align: middle;
   letter-spacing: .1em;
   font-size: 12px;
+}
+
+.menu__link:hover{
+  color: #f89513;
+}
+
+.menu__link--active{
+  color: #f89513;
 }
 
 .contact{
@@ -71,7 +96,7 @@
 .contact__number{
   color: white;
   font-size: 21px;
-  margin-bottom: 5px;
+  line-height: 30px;
 }
 
 .contact__schedule{

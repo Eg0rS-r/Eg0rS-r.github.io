@@ -1,0 +1,100 @@
+.service-cards-list{
+  display: flex;
+  width: 100%;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.service__container{
+  flex-flow: column;
+}
+
+.card{
+  width: 250px;
+  margin-bottom: 45px;
+}
+
+.service__card--last-line{
+  margin-bottom: 0;
+}
+
+.card:last-child{
+  margin-right: 0;
+}
+
+.card__prev{
+  width: 250px;
+  height: 153px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card__prev::before{
+  content: '';
+  text-align: center;
+  line-height: 153px;
+  position: absolute;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.72px;
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0, .5)
+}
+
+.card__prev--card-1::before{
+  content: 'Фитнес';
+}
+
+.card__prev--card-2::before{
+  content: 'диетолог';
+}
+
+.card__prev--card-3::before{
+  content: 'йога';
+}
+
+.card__prev--card-4::before{
+  content: 'петли tpx';
+}
+
+.card__prev--card-5::before{
+  content: 'кроссфит';
+}
+
+.card__prev--card-6::before{
+  content: 'бассейн';
+}
+
+.card__img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+}
+
+.card__topic{
+  text-transform: uppercase;
+}
+
+.card__header{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card__text{
+  margin-top: 26px;
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.card__list{
+  list-style-type: disc;
+  margin-left: 23px;
+  margin-top: 15px;
+  text-align: left;
+}

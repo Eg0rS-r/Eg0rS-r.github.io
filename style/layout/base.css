@@ -44,6 +44,10 @@ button{
   padding: 0 20px;
 }
 
+.container__content{
+  padding: 0 90px;
+}
+
 .logo__text{
   font-family: 'gora_free';
   font-size: 18px;
