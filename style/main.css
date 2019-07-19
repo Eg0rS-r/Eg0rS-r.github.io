@@ -13,6 +13,7 @@
 @import url('./blocks/notice.css');
 @import url('./blocks/partners.css');
 @import url('./blocks/top-news.css');
+@import url('./blocks/intro.css');
 @import url('./blocks/footer.css');
 
 
@@ -84,18 +85,7 @@
 /* SERVICE PAGE */
 
 .maincontent-service{
-  padding: 44px 0 83px;
-}
-
-.line-flex{
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  margin-bottom: 50px;
-}
-
-.line-flex:last-child{
-  margin-bottom: 0;
+  padding: 44px 0 58px;
 }
 
 .service{
