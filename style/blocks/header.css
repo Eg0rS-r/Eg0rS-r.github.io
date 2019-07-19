@@ -97,18 +97,12 @@
 .contact__number{
   color: white;
   font-size: 21px;
-  line-height: 30px;
 }
 
 .contact__schedule{
   opacity: .7;
   color: #f89513;
+  display: block;
+  margin-top: 3px;
   text-decoration: underline;
-}
-
-.schedule-text{
-  position: absolute;
-  text-align: center;
-  top: 100%;
-
 }

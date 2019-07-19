@@ -4,65 +4,43 @@
 }
 
 .service__card{
-  width: 250px;
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 247px;
   margin-right: 60px;
 }
 
-.card-list__row{
-  display: flex;
-  margin-bottom: 45px;
-  flex-flow: row;
-}
-
-.card-list__row:last-child{
-  margin-bottom: 0;
+.service__card:last-child, .service__card:nth-child(3){
+  margin-right: 0;
 }
 
 .card__prev{
-  width: 250px;
+  width: 100%;
   height: 153px;
   border-radius: 4px;
   overflow: hidden;
   position: relative;
 }
 
-.card__prev::before{
-  content: '';
-  text-align: center;
-  line-height: 153px;
+.card__prev-text{
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-transform: uppercase;
   color: #ffffff;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.72px;
+}
+
+.card__prev::before{
+  position: absolute;
+  content: '';
+  display: block;
   width: 100%;
   height: 100%;
   background: rgb(0,0,0, .5)
-}
-
-.card__prev--card-1::before{
-  content: 'Фитнес';
-}
-
-.card__prev--card-2::before{
-  content: 'диетолог';
-}
-
-.card__prev--card-3::before{
-  content: 'йога';
-}
-
-.card__prev--card-4::before{
-  content: 'петли tpx';
-}
-
-.card__prev--card-5::before{
-  content: 'кроссфит';
-}
-
-.card__prev--card-6::before{
-  content: 'бассейн';
 }
 
 .card__img{

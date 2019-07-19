@@ -4,7 +4,7 @@
 }
 
 .partners__headline{
-  margin-bottom: 85px;
+  margin-bottom: 60px;
 }
 
 .partners__container{
@@ -13,12 +13,17 @@
 
 .logo-list{
   width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .logo-list__item{
   flex: 1;
   justify-content: center;
   display: inline-flex;
+  flex-basis: 250px;
+  padding: 25px 0;
 }
 
 .logo-list__logo{
@@ -28,7 +33,7 @@
   transform: translateY(-50%);
 }
 
-.logo-list__logo::before{
+/* .logo-list__logo::before{
   content: '';
   display: block;
   position: absolute;
@@ -58,10 +63,16 @@
 
 .logo-list__logo_6::before{
   content: url(../../img/partners/logo_6.svg);
-}
+} */
 
 .logo-img{
   display: block;
+  filter: grayscale(.9);
+  transition-duration: .3s;
+}
+
+.logo-img:hover{
+  filter: grayscale(0);
 }
 
 .logo-list__item:hover .logo-list__logo::before{
