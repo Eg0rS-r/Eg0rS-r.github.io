@@ -29,9 +29,13 @@ input, textarea, button{
 }
 
 
+/* CENTERED IMG */ 
 
-.accent{
-  color: #f89513;
+.centered-img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
 }
 
 /* Headline */

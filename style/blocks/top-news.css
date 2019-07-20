@@ -27,11 +27,11 @@
 .top-news__filter-img{
   position: relative;
   display: block;
+  width: 160px;
+  height: 160px;
 }
 
 .top-news__img{
-  width: 160px;
-  height: 160px;
   display: block;
 }
 
@@ -47,10 +47,10 @@
   background: rgba(245,245,245, 0);
 }
 
-.top-news__month{
+.top-news__header span{
   color: #666565;
 }
 
-.top-news__1{
+.top-news__small{
   height: 120px;
 }

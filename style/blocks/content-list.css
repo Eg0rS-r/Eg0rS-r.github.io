@@ -51,16 +51,16 @@
   color: #221F1F;
 }
 
-.content-desc__date{
+.content-desc span{
   color: #656464;
   font-size: 14px;
 }
 
-.content-desc__topic{
+.content-desc h2{
   font-weight: 700;
   font-size: 18px;
 }
 
-.content-desc__text{
+.content-desc p{
   text-align: justify;
 }
