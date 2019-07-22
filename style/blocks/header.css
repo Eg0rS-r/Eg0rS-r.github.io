@@ -33,42 +33,75 @@
 .menu__link{
   color: white;
   transition-duration: .3s;
+  padding-left: 32px;
+  position: relative;
 }
 
 .menu__link::before{
   content: "";
-  width: 20px;
-  height: 18px;
-  margin-right: 12px;
-  display: inline-block;
-  vertical-align: middle;
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
   background: no-repeat;
   background-position: center;
   transition-duration: .3s;
 }
 
+.menu__link::after{
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  background: no-repeat;
+  opacity: 0;
+  background-position: center;
+  transition-duration: .3s;
+}
+
 .link-main::before{
-  background-image: url(../../img/menu/main_icon.svg);
+  width: 19px; 
+  height: 14px;
+  background: url('../../img/menu/menu-icons_sprites.png') -10px -10px;
+}
+
+.link-main::after{
+  width: 19px; 
+  height: 14px;
+  background: url('../../img/menu/menu-icons_sprites.png') -49px -10px;
 }
 
 .link-feed::before{
-  background-image: url(../../img/menu/feed_icon.svg);
+  width: 20px; 
+  height: 18px;
+  background: url('../../img/menu/menu-icons_sprites.png') -166px -10px;
+}
+
+.link-feed::after{
+  width: 20px; 
+  height: 18px;
+  background: url('../../img/menu/menu-icons_sprites.png') -206px -10px;
 }
 
 .link-service::before{
-  background-image: url(../../img/menu/service_icon.svg);
+  width: 19px; 
+  height: 14px;
+  background: url('../../img/menu/menu-icons_sprites.png') -88px -10px;
 }
 
-.link-main:hover:before, .menu__link--active.link-main::before{
-  background-image: url(../../img/menu/main_icon_h.svg);
+.link-service::after{
+  width: 19px; 
+  height: 14px;
+  background: url('../../img/menu/menu-icons_sprites.png') -127px -10px;
 }
 
-.link-feed:hover:before, .menu__link--active.link-feed::before{
-  background-image: url(../../img/menu/feed_icon_h.svg);
+.menu__link:hover::after, .menu__link--active::after{
+  opacity: 1;
 }
 
-.link-service:hover:before, .menu__link--active.link-service::before{
-  background-image: url(../../img/menu/service_icon_h.svg);
+.menu__link:hover::before, .menu__link--active::before{
+  opacity: 0;
 }
 
 .menu__icon{
