@@ -35,8 +35,24 @@
 }
 
 .feauteres-card__text ul{
-  list-style-type: disc;
-  margin-left: 23px;
   margin-top: 15px;
   text-align: left;
+}
+
+.feauteres-card__text li {
+  position: relative;
+  padding-left: 33px;
+}
+
+.feauteres-card__text li::before {
+  content: '';
+  display: block;
+  position: absolute;       
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: white;
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
 }
