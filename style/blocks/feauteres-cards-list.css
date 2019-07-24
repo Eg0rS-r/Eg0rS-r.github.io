@@ -1,7 +1,10 @@
 
 .feauteres-card{
-  margin-right: 70px;
-  width: 200px;
+  border: 1px solid black;
+  padding: 23px 0 28px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .card__icon{
@@ -23,7 +26,15 @@
 .feauteres-card__text{
   line-height: 30px;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: normal;
+}
+
+.feauteres-card__text h2{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.54px;
 }
 
 .feauteres-card__text h3{
@@ -41,7 +52,7 @@
 
 .feauteres-card__text li {
   position: relative;
-  padding-left: 33px;
+  padding-left: 23px;
 }
 
 .feauteres-card__text li::before {
@@ -51,8 +62,8 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: white;
-  left: 2%;
+  background: black;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
 }

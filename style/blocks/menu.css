@@ -1,0 +1,121 @@
+.menu{
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+.menu__list{
+  display: flex;
+  flex-flow: column;
+  width: fit-content;
+  align-items: flex-start;
+}
+
+.menu__item{
+  width: fit-content;
+  margin-bottom: 28px;
+}
+
+.menu__item:last-child{
+  margin-bottom: 0;
+}
+
+.menu__link{
+  transition-duration: .3s;
+  padding-left: 32px;
+  position: relative;
+}
+
+.menu__link::before{
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: no-repeat;
+  background-position: center;
+  transition-duration: .3s;
+}
+
+.menu__link::after{
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: no-repeat;
+  opacity: 0;
+  background-position: center;
+  transition-duration: .3s;
+}
+
+.link-main::before{
+  width: 19px; 
+  height: 14px;
+  background: url('../../img/menu/menu-icons_sprites.png') -10px -10px;
+}
+
+.link-main::after{
+  width: 19px; 
+  height: 14px;
+  background: url('../../img/menu/menu-icons_sprites.png') -49px -10px;
+}
+
+.link-service::before{
+  width: 20px; 
+  height: 18px;
+  background: url('../../img/menu/menu-icons_sprites.png') -166px -10px;
+}
+
+.link-service::after{
+  width: 20px; 
+  height: 18px;
+  background: url('../../img/menu/menu-icons_sprites.png') -206px -10px;
+}
+
+.link-feed::before{
+  width: 19px; 
+  height: 14px;
+  background: url('../../img/menu/menu-icons_sprites.png') -88px -10px;
+}
+
+.link-feed::after{
+  width: 19px; 
+  height: 14px;
+  background: url('../../img/menu/menu-icons_sprites.png') -127px -10px;
+}
+
+.menu__link:hover::after, .menu__link--active::after{
+  opacity: 1;
+}
+
+.menu__link:hover::before, .menu__link--active::before{
+  opacity: 0;
+}
+
+.menu__icon{
+  margin-right: 15px;
+}
+
+.menu__text{
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: .1em;
+  font-size: 12px;
+}
+
+.menu__link:hover{
+  color: #f89513;
+}
+
+.menu__link--active{
+  color: #f89513;
+}

@@ -12,7 +12,11 @@
 }
 
 .social{
+  margin-top: 48px;
   font-weight: 700;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 .social__text{
@@ -36,7 +40,6 @@
 .social__icon{
   width: 20px;
   height: 20px;
-  background: #D0D0D0;
   border-radius: 50%;
   display: inline-block;
   transition-duration: .3s;

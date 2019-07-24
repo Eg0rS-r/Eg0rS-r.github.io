@@ -1,0 +1,10 @@
+.side-block{
+  display: inline-flex;
+  max-width: 275px;
+  flex-basis: 275px;
+  flex-flow: column;
+  margin-right: 20px;
+  text-align: center;
+  align-items: center;
+  padding-top: 38px;
+}

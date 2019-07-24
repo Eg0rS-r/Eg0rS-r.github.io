@@ -4,6 +4,7 @@
 @import url('./layout/base.css');
 
 @import url('./blocks/header.css');
+@import url('./blocks/menu.css');
 @import url('./blocks/breadcrumbs.css');
 @import url('./blocks/feauteres-cards-list.css');
 @import url('./blocks/service-cards-list.css');
@@ -14,25 +15,34 @@
 @import url('./blocks/partners.css');
 @import url('./blocks/top-news.css');
 @import url('./blocks/intro.css');
+@import url('./blocks/side-block.css');
 @import url('./blocks/footer.css');
 
 
 
 /* MAIN PAGE */
 
-.maincontent-main{
-  padding-top: 79px;
-  padding-bottom: 65px;
+.maincontent{
+  display: inline-flex;
+  flex-flow: column;
+  flex: 1;
 }
 
-.headline--center{
-  margin: 0 auto 60px;
+.maincontent-main{
+  padding-bottom: 50px;
+}
+
+.headline--left{
+  text-align: left;
+  margin: 0 auto 32px;
   letter-spacing: 1.47px;
 }
 
 .banner{
   display: block;
-  margin-bottom: 58px;
+  margin-right: auto;
+  margin-left: 10px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -51,7 +61,6 @@
 
 .news{
   text-align: center;
-  padding-top: 65px;
   padding-bottom: 65px;
 }
 
@@ -69,7 +78,7 @@
 
 .reviews{
   padding-top: 28px;
-  padding-bottom: 55px;
+  padding-bottom: 44px;
 }
 
 .reviews__container{

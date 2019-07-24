@@ -4,6 +4,7 @@
   opacity: .8;
   font-style: italic;
   font-weight: 300;
+  margin-right: auto;
 }
 
 .breadcrumbs__link{

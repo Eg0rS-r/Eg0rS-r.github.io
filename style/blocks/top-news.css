@@ -1,9 +1,9 @@
 
 .top-news{
   display: flex;
+  margin-top: 60px;
   flex-flow: column;
-  text-align: left;
-  margin-left: auto;
+  align-items: center;
 }
 
 .top-news__header{
