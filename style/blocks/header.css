@@ -49,11 +49,12 @@
 
 .schedule-block{
   position: absolute;
+  z-index: 100;
   left: -9999px;
   top: 100%;
   opacity: 0;
   margin-right: 20px;
-  transition: opacity .3s;
+  transition: opacity .4s;
 }
 
 /* .schedule::before{
