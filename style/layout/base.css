@@ -53,7 +53,7 @@ input, textarea, button{
 
 .container{
   flex: 1;
-  max-width: 1200px;
+  max-width: 1100px;
   display: flex;
   margin: auto;
   padding: 0 20px;

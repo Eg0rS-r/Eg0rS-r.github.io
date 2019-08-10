@@ -1,15 +1,10 @@
 
 .partners{
-  width: 100%;
-  border: 1px solid black;
-  padding: 25px 55px;
-  margin-top: 34px;
+  margin-top: 60px;
 }
 
 .partners__headline{
-  font-size: 18px;
-  letter-spacing: 0.38px;
-  margin-bottom: 24px;
+  margin-bottom: 60px;
 }
 
 .partners__container{
@@ -25,8 +20,6 @@
 
 .logo-list__item{
   flex: 1;
-  box-sizing: content-box;
-  height: 64px;
   justify-content: center;
   display: inline-flex;
   flex-basis: 250px;

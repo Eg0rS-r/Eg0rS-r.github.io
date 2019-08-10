@@ -1,6 +1,5 @@
 
 .notice{
-  width: 100%;
   margin-top: 60px;
   background: #131415;
 }
@@ -11,23 +10,20 @@
 }
 
 .notice__pattern{
+  width: 98.5%;
   display: flex;
-  width: 100%;
   justify-content: space-around;
   background: url(../../img/pattern.png);
 }
 
 .notice__text{
-  text-align: center;
+  text-align: justify;
   width: 635px;
   margin: 30px;
   font-size: 18px;
   color: #ffffff;
   line-height: 30px;
   font-weight: 300;
-}
-.notice__text b{
-  font-weight: 700;
 }
 
 .notice__text span{

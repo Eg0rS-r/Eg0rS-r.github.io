@@ -15,6 +15,114 @@
   font-weight: normal;
 }
 
+.menu{
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.menu__item{
+  display: inline-block;
+  margin-right: 27px;
+}
+
+.menu__item:last-child{
+  margin-right: 0;
+}
+
+.menu__link{
+  color: white;
+  transition-duration: .3s;
+  padding-left: 32px;
+  position: relative;
+}
+
+.menu__link::before{
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  background: no-repeat;
+  background-position: center;
+  transition-duration: .3s;
+}
+
+.menu__link::after{
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  background: no-repeat;
+  opacity: 0;
+  background-position: center;
+  transition-duration: .3s;
+}
+
+.link-main::before{
+  width: 19px; 
+  height: 14px;
+  background: url('../../img/menu/menu-icons_sprites.png') -10px -10px;
+}
+
+.link-main::after{
+  width: 19px; 
+  height: 14px;
+  background: url('../../img/menu/menu-icons_sprites.png') -49px -10px;
+}
+
+.link-feed::before{
+  width: 20px; 
+  height: 18px;
+  background: url('../../img/menu/menu-icons_sprites.png') -166px -10px;
+}
+
+.link-feed::after{
+  width: 20px; 
+  height: 18px;
+  background: url('../../img/menu/menu-icons_sprites.png') -206px -10px;
+}
+
+.link-service::before{
+  width: 19px; 
+  height: 14px;
+  background: url('../../img/menu/menu-icons_sprites.png') -88px -10px;
+}
+
+.link-service::after{
+  width: 19px; 
+  height: 14px;
+  background: url('../../img/menu/menu-icons_sprites.png') -127px -10px;
+}
+
+.menu__link:hover::after, .menu__link--active::after{
+  opacity: 1;
+}
+
+.menu__link:hover::before, .menu__link--active::before{
+  opacity: 0;
+}
+
+.menu__icon{
+  margin-right: 15px;
+}
+
+.menu__text{
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: .1em;
+  font-size: 12px;
+}
+
+.menu__link:hover{
+  color: #f89513;
+}
+
+.menu__link--active{
+  color: #f89513;
+}
+
 .contact{
   text-align: right;
 }
@@ -49,12 +157,11 @@
 
 .schedule-block{
   position: absolute;
-  z-index: 100;
   left: -9999px;
   top: 100%;
   opacity: 0;
   margin-right: 20px;
-  transition: opacity .4s;
+  transition: opacity .3s;
 }
 
 /* .schedule::before{
